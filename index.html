@@ -54,12 +54,12 @@
 
 <body class="font-poppins">
     <header>
-        <nav>
+        <nav class="py-4 lg:py-7">
             <div class="navbar bg-base-100 container flex justify-between items-center flex-row-reverse lg:flex-row">
                 <div class="">
                   <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 stroke-theme-color" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                     </label>
                     <div tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
                         <ul>
@@ -93,7 +93,7 @@
                               </ul>
                             </li>
                           </ul>
-                          <a class="btn h-auto bg-theme-color text-sm lg:text-lg capitalize text-white rounded-lg px-7 py-2 lg:py-3 hover:bg-transparent border-2 border-theme-color hover:border-theme-color hover:text-theme-color hover:scale-90 origin-center">Free Consultation</a>
+                          <a class="btn h-auto bg-theme-color text-sm lg:text-lg capitalize text-white rounded-lg px-7 py-3 lg:py-3 hover:scale-90 hover:text-white hover:bg-theme-color origin-center duration-200">Free Consultation</a>
                     </div>
                   </div>
                   <a href="#" class="w-full max-w-[158px] hidden lg:block">
@@ -142,7 +142,7 @@
                   </ul>
                 </div>
                 <div class="">
-                  <a class="btn h-auto bg-theme-color text-sm lg:text-lg capitalize text-white rounded-lg px-7 py-2 lg:py-3 hover:bg-transparent border-2 border-theme-color hover:border-theme-color hover:text-theme-color hover:scale-90 origin-center hidden lg:block">Free Consultation</a>
+                  <a class="btn h-auto bg-theme-color text-sm lg:text-lg capitalize text-white rounded-lg px-7 py-3 lg:py-3 hover:scale-90 hover:text-white hover:bg-theme-color origin-center duration-200 hidden lg:block">Free Consultation</a>
                   <a href="#" class="w-full max-w-[158px] lg:hidden">
                     <img src="images/logo2.png" alt="">
                   </a>
@@ -151,7 +151,21 @@
         </nav>
     </header>
     <main>
-
+        <section id="banner">
+            <div class="container">
+                <div class="relative rounded-lg bg-[url('images/banner.png')] bg-center bg-cover bg-no-repeat overflow-hidden min-h-[80vh]">
+                    <div class="absolute w-full h-full left-0 top-0 bg-neutral-950/40 mix-blend-multiply"></div>
+                    <div class="text-center py-16 px-6 w-full max-w-3xl mx-auto relative z-[1]">
+                        <h1 class="font-garamond text-5xl md:text-7xl text-white pb-6 font-extrabold">We Provide Effective Legal Solutions</h1>
+                        <p class="text-light-color-2 text-sm md:text-base leading-relaxed font-normal pb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                        <form action="" class="flex flex-col md:flex-row gap-4">
+                            <input type="text" placeholder="Search your services" class="w-full rounded-lg py-3 px-5 outline-none text-[#a0a0a0] text-center md:text-left">
+                            <button class="bg-theme-color text-sm lg:text-lg capitalize text-white rounded-lg px-7 py-3 lg:py-3 hover:scale-90 hover:text-white hover:bg-theme-color origin-center duration-200">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
 
