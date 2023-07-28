@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light" >
 
 <head>
     <meta charset="UTF-8">
@@ -26,7 +26,7 @@
             theme: {
                 extend: {
                     colors: {
-                        'theme-color': '#414040',
+                        'theme-color': '#B68C5A',
                         'heading-color': '#414040',
                         'para-color': '#707070',
                         'light-color': '#a0a0a0',
@@ -39,6 +39,13 @@
                 fontFamily: {
                     'garamond': ['EB Garamond', 'serif'],
                     'poppins': ['Poppins', 'sans-serif']
+                },
+                container: {
+                    center: true,
+                    padding: {
+                        DEFAULT: '20px',
+                        md: '50px',
+                    }
                 }
             }
         }
@@ -46,7 +53,109 @@
 </head>
 
 <body class="font-poppins">
-    <h1>Hello</h1>
+    <header>
+        <nav>
+            <div class="navbar bg-base-100 container flex justify-between items-center flex-row-reverse lg:flex-row">
+                <div class="">
+                  <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </label>
+                    <div tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 right-0">
+                        <ul>
+                            <li><a class="text-para-color">Home</a></li>
+                            <li>
+                              <a class="text-para-color">Services</a>
+                              <ul class="p-2">
+                                <li><a class="text-para-color">Submenu 1</a></li>
+                                <li><a class="text-para-color">Submenu 2</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a class="text-para-color">Cases</a>
+                              <ul class="p-2">
+                                <li><a class="text-para-color">Submenu 1</a></li>
+                                <li><a class="text-para-color">Submenu 2</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a class="text-para-color">Blog</a>
+                              <ul class="p-2">
+                                <li><a class="text-para-color">Submenu 1</a></li>
+                                <li><a class="text-para-color">Submenu 2</a></li>
+                              </ul>
+                            </li>
+                            <li>
+                              <a class="text-para-color">Contact Us</a>
+                              <ul class="p-2">
+                                <li><a class="text-para-color">Submenu 1</a></li>
+                                <li><a class="text-para-color">Submenu 2</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <a class="btn h-auto bg-theme-color text-sm lg:text-lg capitalize text-white rounded-lg px-7 py-2 lg:py-3 hover:bg-transparent border-2 border-theme-color hover:border-theme-color hover:text-theme-color hover:scale-90 origin-center">Free Consultation</a>
+                    </div>
+                  </div>
+                  <a href="#" class="w-full max-w-[158px] hidden lg:block">
+                    <img src="images/logo2.png" alt="">
+                  </a>
+                </div>
+                <div class="hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-para-color">Home</a></li>
+                    <li tabindex="0">
+                      <details>
+                        <summary class="text-para-color">Services</summary>
+                        <ul class="p-2">
+                          <li><a class="text-para-color">Submenu 1</a></li>
+                          <li><a class="text-para-color">Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li tabindex="0">
+                      <details>
+                        <summary class="text-para-color">Cases</summary>
+                        <ul class="p-2">
+                            <li><a class="text-para-color">Submenu 1</a></li>
+                            <li><a class="text-para-color">Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li tabindex="0">
+                      <details>
+                        <summary class="text-para-color">Blog</summary>
+                        <ul class="p-2">
+                          <li><a class="text-para-color">Submenu 1</a></li>
+                          <li><a class="text-para-color">Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li tabindex="0">
+                      <details>
+                        <summary class="text-para-color">Contact Us</summary>
+                        <ul class="p-2">
+                          <li><a class="text-para-color">Submenu 1</a></li>
+                          <li><a class="text-para-color">Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                  </ul>
+                </div>
+                <div class="">
+                  <a class="btn h-auto bg-theme-color text-sm lg:text-lg capitalize text-white rounded-lg px-7 py-2 lg:py-3 hover:bg-transparent border-2 border-theme-color hover:border-theme-color hover:text-theme-color hover:scale-90 origin-center hidden lg:block">Free Consultation</a>
+                  <a href="#" class="w-full max-w-[158px] lg:hidden">
+                    <img src="images/logo2.png" alt="">
+                  </a>
+                </div>
+              </div>
+        </nav>
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 
 </html>
